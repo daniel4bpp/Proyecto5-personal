@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Básica</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black; /* Fondo negro */
+            overflow: hidden; /* Ocultar la barra de desplazamiento */
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Para colocar el video detrás de otros elementos */
+        }
+
+        .nav-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background-color: var(--secundario);
+            z-index: 1000;
+        }
+
+        .navegacion-principal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 0 20px; /* Espacio para los botones superiores */
+        }
+
+        .navegacion-principal a {
+            text-align: center;
+            color: var(--negro);
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 1rem;
+        }
+        .navegacion-principal a:hover {
+            background-color: var(--primario);
+            color: var(--oscuro);
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alinea los elementos en la parte superior */
+            flex-wrap: wrap; /* Permitir que los contenedores se envuelvan si no caben en una fila */
+            padding-top: 100px; /* Espacio para los botones superiores */
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .info-container {
+            width: calc(33.33% - 40px); /* Ancho del 33.33% con espacio entre los contenedores */
+            background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+            border-radius: 5px;
+            padding: 20px;
+            margin: 170px 20px 0; /* Aumenta el margen superior */
+            box-sizing: border-box; /* Incluir el padding y el border en el ancho */
+        }
+
+        .info-container h2 {
+            margin-top: 0;
+        }
+
+        .info-container p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bg">
+        <nav class="navegacion-principal">
+            <a href="index.html">Inicio</a>
+            <a href="Sobre mi.html">Sobre Mi</a>
+            <a href="personal.html">personal</a>
+            <a href="Escuela.html">Escuela</a>
+        </nav>
+    </div>
+    <video autoplay loop muted id="video-background">
+        <source src="img/Los Pingüinos me la van a Mascar en 3D.mp4" type="video/mp4">
+        <source src="img/Los Pingüinos me la van a Mascar en 3D.mp4" type="video/ogg">
+        Tu navegador no soporta el formato de video.
+    </video>
+
+    <div class="contenedor">
+        <div class="info-container">
+            <h2>Yo mero, <br> pos quien mas xD</h2>
+            <p><strong>Nombre:</strong> Daniel</p>
+            <p><strong>como llegue a un cetis</strong> <br>todo comenzo cuando un niño me undio la mollera con un palo en el
+                kinder y asi estoy en cetis </p>
+            <p><strong>País:</strong> Mexico</p>
+            <p><strong>Escuela:</strong> Centro de Estudios Tecnológicos Industrial y de servicios No. 153
+                <br> "Miguel Hidalgo y Costilla"
+            </p>
+        </div>
+
+        <div class="info-container">
+            <h2>Mis <br> pasatiempos</h2>
+            <p><strong>juegos</strong> LoL, Roblox, ajedrez y otros juegitos espantaviejas </p>
+            <p><strong>twitch</strong> veo a gente bien retrasada como yo xD</p>
+            <p><strong>aprender musica</strong> estoy aorendiendo a tocar el bajo electrico </p>
+            <p><strong>lo que me gusta mas</strong> Hacerme bien menso </p>
+        </div>
+
+        <div class="info-container">
+            <h2>Lo que me <br> hace enojar</h2>
+            <p><strong>ufas</strong> La gente bien criticona </p>
+            <p><strong>la gente </strong> que cague el palo</p>
+            <p><strong>yo</strong> aveces si me enojar yo solito por mis burradas</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

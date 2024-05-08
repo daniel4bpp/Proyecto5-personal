@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela</title>
+    <style>
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Para ajustar el video al tamaño del contenedor */
+            z-index: -1;
+        }
+        .nav-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background-color: #333; /* Cambiado a un color de fondo estático para la barra de navegación */
+            z-index: 1000;
+        }
+
+        .navegacion-principal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 0 20px;
+        }
+
+        .navegacion-principal a {
+            text-align: center;
+            color: white; /* Cambiado el color del texto a blanco */
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 1rem;
+        }
+
+        .navegacion-principal a:hover {
+            background-color: #555; /* Cambiado el color de fondo al hacer hover */
+        }
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alinea los elementos en la parte superior */
+            flex-wrap: wrap; /* Permitir que los contenedores se envuelvan si no caben en una fila */
+            padding-top: 100px; /* Espacio para los botones superiores */
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .info-container {
+            width: calc(33.33% - 40px); /* Ancho del 33.33% con espacio entre los contenedores */
+            background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+            border-radius: 5px;
+            padding: 20px;
+            margin: 170px 20px 0; /* Aumenta el margen superior */
+            box-sizing: border-box; /* Incluir el padding y el border en el ancho */
+        }
+
+        .info-container h2 {
+            margin-top: 0;
+        }
+
+        .info-container p {
+            margin-bottom: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav-bg">
+        <nav class="navegacion-principal">
+            <a href="index.html">Inicio</a>
+            <a href="Sobre mi.html">Sobre Mi</a>
+            <a href="personal.html">Personal</a>
+            <a href="Escuela.html">Escuela</a>
+        </nav>
+    </div>
+    <video autoplay loop muted id="video-background">
+        <source src="img/Calamardo bailando Bad guy.mp4" type="video/mp4">
+        <source src="img/Calamardo bailando Bad guy.ogg" type="video/ogg">
+        Tu navegador no soporta el formato de video.
+    </video>
+
+    <div class="contenedor">
+        <div class="info-container">
+            <h2>Mi <br> Escuela</h2>
+            <p><strong>Escuelita</strong> <br>Centro de Estudios Tecnologico Industrial <br>y de Servicios No.153 <a href="https://www.cetis153.edu.mx/">"Miguel Hidalgo y Costilla" </a></p>
+            <p><strong>Grado y Grupo</strong> <br> 4 BP </p>
+            <p><strong>Que estudio</strong> <br>programacion</p>
+        </div>
+
+        <div class="info-container">
+            <h2>Compañeros<br> </h2>
+            <p><strong>Amigos</strong> <br>caien bien pero a veces son cagapalo</p>
+            <p><strong>compañeros</strong><br>son bien escandalosos y como artan </p>
+            <p><strong>Que quiero estudiar</strong><br>Lo que caiga es bueno </p>
+            
+        </div>
+    </div>
+</body>
+</html>
